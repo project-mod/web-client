@@ -28,8 +28,8 @@
       "@constants/*": ["src/constants/*"],
       "@url": ["src/url"],
       "@url/*": ["src/url/*"],
-      "@types": ["src/types"],
-      "@types/*": ["src/types/*"]
+      "@type": ["src/type"],
+      "@type/*": ["src/type/*"]
     },
     "incremental": true
   },
