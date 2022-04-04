@@ -11,10 +11,9 @@ import { api_urls } from "@url/api_urls";
 import { Register_Response_401 } from "@type/api_response/register";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const session: Register_Response_401 = await axios.post(
-    api_urls.register,
-    {}
-  );
+  const session: Register_Response_401 = await (
+    await axios.post(api_urls.register, {})
+  ).data;
   return { props: { res: session } };
 };
 

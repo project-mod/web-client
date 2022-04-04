@@ -34,6 +34,13 @@ interface RES_429 {
   retry_after_my: number;
 }
 
+export type Register_Response_Possible =
+  | RES_200
+  | RES_400
+  | RES_401
+  | RES_403
+  | RES_429;
+
 export type { RES_200 as Register_Response_200 };
 export type { RES_400 as Register_Response_400 };
 export type { RES_401 as Register_Response_401 };
